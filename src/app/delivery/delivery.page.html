@@ -1,0 +1,113 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
+		</ion-buttons>
+		<ion-title>{{"delivery_info" | translate}}</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content class="bg_color">
+	<div class="form">
+		<ion-list lines="none">
+			<h2>{{'when_to_deliver' | translate}}</h2>
+			<ion-radio-group>
+				<ion-card>
+					<ion-row>
+						<ion-col size="12">
+							<ion-item>
+								<div class="item_inner d-flex">
+									<ion-radio></ion-radio>
+									<div class="text_box">
+										<h3>Immediate Delivery</h3>
+										<p>Be ready with enaught cash when our guy will deliver</p>
+									</div>
+								</div>
+							</ion-item>
+						</ion-col>
+					</ion-row>
+				</ion-card>
+
+
+				<ion-card>
+					<ion-row>
+						<ion-col size="7">
+							<ion-item>
+								<div class="item_inner d-flex">
+									<ion-radio></ion-radio>
+									<h3>Delivery After</h3>
+								</div>
+							</ion-item>
+						</ion-col>
+
+						<ion-col size="5">
+							<ion-item>
+								<div class="item_inner d-flex">
+									<ion-datetime class="end" displayFormat="h:mm a" placeholder="{{'select_time' | translate}}"></ion-datetime>
+									<ion-icon class="zmdi zmdi-caret-down ion-text-end"></ion-icon>
+								</div>
+							</ion-item>
+						</ion-col>
+					</ion-row>
+					<p class="sub_text">We'll delvery as per your timings on given address</p>
+				</ion-card>
+
+				<ion-card>
+					<ion-row>
+						<ion-col size="12">
+							<ion-item>
+								<div class="item_inner d-flex">
+									<ion-radio></ion-radio>
+									<h3>Custom</h3>
+								</div>
+							</ion-item>
+						</ion-col>
+					</ion-row>
+					<div class="custom_box">
+						<ion-row>
+							<ion-col size="6">
+								<ion-item>
+									<div class="item_inner d-flex">
+										<ion-datetime displayFormat="h:mm a" placeholder="{{'select_time' | translate}}"></ion-datetime>
+										<ion-icon class="zmdi zmdi-caret-down ion-text-end"></ion-icon>
+									</div>
+								</ion-item>
+							</ion-col>
+
+							<ion-col size="6">
+								<ion-item>
+									<div class="item_inner d-flex">
+										<ion-datetime class="end" displayFormat="h:mm a" placeholder="{{'select_time' | translate}}"></ion-datetime>
+										<ion-icon class="zmdi zmdi-caret-down ion-text-end"></ion-icon>
+									</div>
+								</ion-item>
+							</ion-col>
+						</ion-row>
+					</div>
+					<p class="sub_text">Get deliver on specila Date & times.</p>
+				</ion-card>
+			</ion-radio-group>
+		</ion-list>
+	</div>
+</ion-content>
+
+
+<ion-footer class="ion-no-border">
+	<div class="text_box">
+		<h2 class="d-flex">
+			{{'where_to_deliver' | translate}}
+			<span class="end" (click)="add_address()">{{'change' | translate}}
+				<ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+			</span>
+		</h2>
+		<div class="address_container">
+			<div class="address">
+				<h3>Home</h3>
+				<p>104, Adina Park, Opp HSBC Bank, Old golden street, Washington DC, USA </p>
+			</div>
+		</div>
+	</div>
+	<div class="confirm_order" (click)="payment()">
+		<h2 class="d-flex">{{"continue_to_pay_total_amount" | translate}} <span class="end">$ 80.00</span></h2>
+	</div>
+</ion-footer>

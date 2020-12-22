@@ -1,0 +1,8 @@
+{
+  "name": "customerfoodish",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
