@@ -65,7 +65,7 @@ ion-card {
 			margin-bottom: 20px;
 			font-size: 1.14rem;
 			font-weight: 500;
-			color: var(--white);
+			color: var(--black);
 
 			span {
 				color: var(--text-light);
@@ -108,7 +108,7 @@ ion-card {
 			h4 {
 				font-size: .9rem;
 				font-weight: 400;
-				color: var(--white);
+				color: var(--black);
 				text-overflow: ellipsis;
 				white-space: nowrap;
 				overflow: hidden;
@@ -140,7 +140,7 @@ ion-card {
 	h2 {
 		font-size: 1.14rem;
 		font-weight: 500;
-		color: var(--white);
+		color: var(--primary);
 		margin: 0;
 		padding-bottom: 20px;
 	}
@@ -148,7 +148,7 @@ ion-card {
 	ion-icon {
 		font-size: 1.24rem;
 		min-width: 30px;
-		color: var(--white);
+		color: var(--primary);
 
 	}
 
@@ -164,12 +164,12 @@ ion-card {
 }
 
 ion-footer {
-	background: var(--bg-color-secondary);
+	background: var(--primary);
 	min-height: 65px;
 	padding: 0 20px;
 
 	ion-icon {
-		color: var(--primary);
+		color: var(--white);
 		font-size: 1.24rem;
 		min-width: 30px;
 	}

@@ -160,12 +160,12 @@ ion-header {
 			}
 
 			ion-back-button {
-				--color: var(--primary) !important;
-				color: var(--primary) !important;
+				--color: var(--white) !important;
+				color: var(--white) !important;
 			}
 
 			ion-menu-button {
-				--color: var(--primary) !important;
+				--color: var(--white) !important;
 				--padding-start: 0 !important;
 				--padding-end: 0 !important;
 				font-size: 1.6rem !important;
@@ -301,7 +301,7 @@ ion-header {
 			--padding-end: 0 !important;
 			--padding-top: 0 !important;
 			// 			--padding-bottom: 0px !important;
-			color: var(--white);
+			color: var(--black);
 			--placeholder-color: var(--text-light2) !important;
 			--placeholder-opacity: 1;
 			--placeholder-font-weight: 500 !important;
@@ -383,7 +383,7 @@ app-bookmark {
 }
 
 .picker-wrapper {
-	background: var(--bg-color-secondary) !important;
+	background: var(--white) !important;
 
 	.picker-toolbar {
 		display: flex;
@@ -417,7 +417,7 @@ app-bookmark {
 	.picker-columns {
 		ion-picker-column {
 			.picker-opt {
-				color: var(--white);
+				color: var(--black);
 				font-size: 1.2rem;
 				text-overflow: unset;
 

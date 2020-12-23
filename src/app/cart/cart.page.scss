@@ -3,14 +3,14 @@ ion-header ion-toolbar ion-title {
 }
 
 .restro_details {
-	background: var(--bg-color-secondary);
+	background: var(--white);
 	padding: 17px 19px;
 
 	h2 {
 		margin: 0;
-		color: var(--white);
+		color: var(--black);
 		margin: 0;
-		color: var(--white);
+		color: var(--black);
 		font-size: 1.15rem;
 		padding-bottom: 3px;
 	}
@@ -23,7 +23,8 @@ ion-header ion-toolbar ion-title {
 }
 
 ion-list {
-	background: none;
+	background: var(--white);
+	// background: none;
 	margin: 0;
 	padding: 0;
 	padding-top: 10px;
@@ -62,7 +63,7 @@ ion-list {
 					h2 {
 						margin: 0;
 						font-size: .93rem;
-						color: var(--white);
+						color: var(--black);
 						font-weight: 400;
 						letter-spacing: .5px;
 						padding-bottom: 6px;
@@ -124,7 +125,7 @@ ion-list {
 								display: flex;
 								align-items: center;
 								width: fit-content;
-								color: var(--white);
+								color: var(--black);
 								font-size: 1rem;
 
 								span {
@@ -176,14 +177,14 @@ ion-list {
 }
 
 ion-footer {
-	background: var(--bg-color-secondary);
+	background: var(--white);
 	padding: 0;
 
 	.details {
 		padding: 18px 20px 18px 20px;
 
 		h2 {
-			color: var(--white);
+			color: var(--black);
 			margin: 0;
 			font-size: 1rem;
 			letter-spacing: 0.5px;

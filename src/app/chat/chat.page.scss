@@ -21,7 +21,7 @@
  				padding-bottom: 3px;
 
  				span {
- 					color: var(--text-light);
+ 					color: var(--text-light2);
  					font-weight: 400;
  					font-size: 1rem;
  					letter-spacing: 0;
@@ -51,7 +51,7 @@
 
  			h3 {
  				margin: 0;
- 				color: var(--text-light);
+ 				color: var(--text-light2);
  				font-weight: 400;
  				font-size: .9rem;
  				letter-spacing: 0;
@@ -63,7 +63,7 @@
  }
 
  ion-content {
- 	--background: var(--bg-color-secondary) !important;
+ 	--background: var(--bg-color) !important;
  }
 
  .chat_container {
@@ -139,7 +139,7 @@
  }
 
  ion-footer {
- 	background: var(--bg-color);
+ 	background: var(--white);
 
  	.form {
  		margin: 0;

@@ -1,5 +1,5 @@
 ion-header {
-	background: var(--bg-color-secondary);
+	background: var(--primary);
 
 	ion-toolbar ion-title {
 		font-size: 1.15rem;
@@ -35,7 +35,7 @@ ion-list {
 
 	h2 {
 		margin: 0;
-		color: var(--white);
+		color: var(--black);
 		padding: 0 20px;
 		font-size: 1.3rem;
 		letter-spacing: .5px;
@@ -57,7 +57,7 @@ ion-list {
 
 		h3 {
 			margin: 0;
-			color: var(--white);
+			color: var(--black);
 			font-size: .95rem;
 			letter-spacing: .5px;
 		}

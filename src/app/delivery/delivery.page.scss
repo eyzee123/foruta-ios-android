@@ -11,7 +11,7 @@ ion-header ion-toolbar ion-title {
 
 		h2 {
 			margin: 0;
-			color: var(--white);
+			color: var(--black);
 			font-size: 1.3rem;
 			padding-bottom: 20px;
 		}
@@ -73,7 +73,7 @@ ion-header ion-toolbar ion-title {
 
 						h3 {
 							margin: 0;
-							color: var(--white);
+							color: var(--black);
 							font-size: .95rem;
 							font-weight: 400;
 							letter-spacing: .5px;
@@ -108,7 +108,7 @@ ion-header ion-toolbar ion-title {
 }
 
 ion-footer {
-	background: var(--bg-color-secondary);
+	background: var(--white);
 	padding: 25px 0px;
 	padding-bottom: 0;
 
@@ -117,7 +117,7 @@ ion-footer {
 
 		h2 {
 			margin: 0;
-			color: var(--white);
+			color: var(--black);
 			font-size: 1.3rem;
 			padding-bottom: 25px;
 
@@ -147,7 +147,7 @@ ion-footer {
 
 				h3 {
 					margin: 0;
-					color: var(--white);
+					color: var(--black);
 					font-size: 1rem;
 					margin-bottom: 7px;
 				}

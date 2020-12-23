@@ -1,9 +1,9 @@
 ion-header {
-	background: var(--bg-color-secondary);
+	background: var(--primary);
 }
 
 ion-content {
-	--background: var(--bg-color-secondary);
+	--background: var(--bg-color);
 }
 
 
@@ -21,13 +21,13 @@ ion-list {
 		--padding-start: 0;
 		--highligh-color-focused: var(--transparent) !important;
 		margin-bottom: 5px;
-		background: var(--bg-color);
+		background: var(--white);
 		--background: var(--transparent);
 		--ripple-color: var(--transparent) !important;
 
 		h3 {
 			margin: 0;
-			color: var(--white);
+			color: var(--black);
 			font-size: 1.14rem;
 		}
 
