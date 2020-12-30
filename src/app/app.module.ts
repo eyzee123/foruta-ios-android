@@ -15,6 +15,12 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { APP_CONFIG, BaseAppConfig } from './app.config';
+import { EmailValidatorServiceProvider } from 'src/providers/emailValidator';
+import { AlertMessageServiceProvider } from 'src/providers/alert-message-service';
+import { LoadingServiceProvider } from 'src/providers/loading-service';
+import { PostProvider } from 'src/providers/post-provider';
+import { HttpModule } from '@angular/http';
+import { IonicStorageModule } from '@ionic/storage';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -28,6 +34,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     IonicModule.forRoot(),
     AppRoutingModule,
       HttpClientModule,
+      HttpModule,
+      IonicStorageModule.forRoot(),
       TranslateModule,  
 	  TitlePageModule, 
       TranslateModule.forRoot({
@@ -41,8 +49,14 @@ export function HttpLoaderFactory(http: HttpClient) {
   providers: [
     StatusBar,
     SplashScreen,
+    
     { provide: APP_CONFIG, useValue: BaseAppConfig },
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    EmailValidatorServiceProvider,
+    AlertMessageServiceProvider,
+    LoadingServiceProvider,
+    PostProvider,
+
   ],
   bootstrap: [AppComponent]
 })

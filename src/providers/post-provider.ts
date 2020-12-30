@@ -1,12 +1,11 @@
 import  { Injectable } from '@angular/core';
 import {Http, Headers, RequestOptions} from '@angular/http';
 import { map } from 'rxjs/operators';
+import { ENV } from '../app/environments';
 
 @Injectable()
 export class PostProvider{
-    server: string ="http://192.168.1.23/sabong_api/";
-  //  server: string ="http://localhost/sabong_api/";
-//   server: string = "https://cirfund.org/checker_api/";
+ 
     constructor(public http : Http){
         
     }
@@ -16,7 +15,7 @@ export class PostProvider{
         let headers = new Headers({ "content-Type":type });
         let options = new RequestOptions({headers: headers});
         
-        return this.http.post(this.server + file, JSON.stringify(body),options)
+        return this.http.post(ENV.baseURL + file, JSON.stringify(body),options)
         .pipe(map(res=>res.json()));
     }
     
